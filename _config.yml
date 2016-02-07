@@ -12,7 +12,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://spacerest.github.io" # the base hostname & protocol for your site
 twitter_username: sad1eparker 
 github_username: spacerest 
-somethingelse: you
+comments: true
 
 # Build settings
 markdown: kramdown
