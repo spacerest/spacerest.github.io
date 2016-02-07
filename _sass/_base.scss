@@ -91,15 +91,14 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: #f30;
-    text-decoration: underline;
+    color: #49a;
 
     &:visited {
-        color: #000000;//darken($brand-color, 15%);
+        color: darken(#49a, 15%);
     }
 
     &:hover {
-        color: #000000;
+        color: #fd0;
 	
     }
 }
@@ -131,8 +130,9 @@ pre,
 code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    border-radius: 7px;
+    background-color: #222;
+    color: #eee;
 }
 
 code {

@@ -1,4 +1,12 @@
 /**
+  * Randos
+  */
+
+.center {
+    text-align: center;
+}
+
+/**
  * Site header
  */
 .site-header {
@@ -108,21 +116,21 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    //border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
     margin: 15px;
+    text-align: center;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+.footer-stars {
+    text-align: center;
+    font-size: 24px;
 }
 
-.contact-list,
 .social-media-list {
     list-style: none;
-    float: right;
     margin-left: 0;
+    text-decoration: none;
 }
 
 .footer-col-wrapper {
@@ -203,10 +211,11 @@
 }
 
 .post-meta {
-    font-size: 24px;
+    line-height: 24px;
+    font-size: 15px;
     color: $grey-color;
     text-align: right;
-    font-weight: 100;
+    font-weight: 200;
     display: inline-block;
     float: right;
 }

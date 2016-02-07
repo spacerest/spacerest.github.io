@@ -16,3 +16,7 @@ comments: true
 
 # Build settings
 markdown: kramdown
+
+# Gems
+gems:
+  - jemoji
