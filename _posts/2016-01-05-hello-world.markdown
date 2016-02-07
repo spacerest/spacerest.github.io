@@ -1,32 +1,33 @@
 ---
 layout: post
-title:  "posting this post"
+title:  "hello world"
 date:   2016-01-05 18:14:55 -0600
 comments: true
 categories: 
 ---
 
-this is my first of several posts keeping track of what i'm learning. i'm going to keep this particular site code-specific (i.e. you won't see any posts about how to break nail-biting habits or how to resurrect my dead plants). right now, i'd like to touch on the following:  
+This is my first of several posts keeping track of what I'm learning. I'm going to keep this particular site code-specific (i.e. you won't see any posts about how to break nail-biting habits or how to resurrect my dead plants). right now, i'd like to touch on the following:  
 
 ╚╚\|░▄░\|╝╝
 {: .center}
 
-1. what relevent things/knowledge did i already have before setting out to put up this blog?
+1. What relevant things/knowledge did I already have before setting out to put up this blog?
 
-2. what new things did i need to install/get acquainted with to get this site up?
+2. What new things did I need to install/get acquainted with to get this site up?
 
-3. what are my next steps?
+3. What are my next steps?
 
 ╚╚\|░▄░\|╝╝
 {: .center}
 
-####1. what did i already have?
+1. What did I already have?
+===============================
 
-- an interest in getting a blog up to document and motivate my progress. i want to see the makings of this blog from the inside.
-- a computer and internet browser and internet connection
-- an intro  understanding of the terminal command line (currently using a mac laptop). the commands i feel cool about are ls, cd, touch, mkdir, cp, mv, open, rm, rm -r, and then... what's it called... how to use executibles (like "vim [open this please]" and "git [do this please]"
-- a basic understanding of the vim text editor (like, how to move my cursor around a little, how to edit text, how to search, how to save/quit. lots to learn and i keep forgetting how to scroll!).
-- a github account and a basic understanding of the git executible. more or less, my git go-to's were (and pretty much still are) the following:
+- An interest in getting a blog up to document and motivate my progress. 
+- A computer and internet browser and internet connection
+- An intro  understanding of the terminal command line (currently using a mac laptop). The commands I feel cool about are ls, cd, touch, mkdir, cp, mv, open, rm, rm -r, and then... what's it called... how to use executibles (like "vim [open this please]" and "git [do this please]"
+- A basic understanding of the vim text editor (like, how to move my cursor around a little, how to edit text, how to search, how to save/quit. Lots to learn and I keep forgetting how to scroll!).
+- A github account and a basic understanding of the git executible. More or less, my git go-to's were (and pretty much still are) the following:
   - git clone [url]
   - git add .
   - git status
