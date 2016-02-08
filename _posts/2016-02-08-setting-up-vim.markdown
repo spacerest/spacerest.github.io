@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "setting up my vim environment"
-date: 2016-02-08 15:34:15 -0600
+date: 2016-02-08 05:34:15 -0600
 comments: true
 categories:
 ---
