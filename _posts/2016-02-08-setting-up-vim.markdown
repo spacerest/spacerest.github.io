@@ -1,4 +1,4 @@
----
+--
 layout: post
 title: "setting up my vim environment"
 date: 2016-02-08 05:34:15 -0600
@@ -11,14 +11,61 @@ Hey there! Today I'd like to set up my vim environment to eliminate some of the 
 ╚╚\|░▄░\|╝╝
 {: .center}
 
-1. My goals:
-  - Have multiple vim windows up within one terminal window
-  - Fix how syntax is displaying in my markdown files (some characters, like underscores in file names, can't be escaped and funk up the highlighting in the rest of my file)
-  - Integrate auto-close tags like <code>def ... end</code> and <code>{ ... }</code>
-  - Compile a list of the commands I'd like to be using regularly.
-2. How to fulfil the above goals.
-3. What's next?
-4. Conclusion and sources.
+- My goals:
+  1. Have multiple vim windows up within one terminal window.
+  2. Fix how syntax is displaying in my markdown files (some characters, like underscores in file names, can't be escaped and funk up the highlighting in the rest of my file). Also fix things so that I can see any trailing white space.
+  3. Integrate auto-close tags like <code>def ... end</code> and <code>{ ... }</code>
+  4. Compile a list of the commands I'd like to be using regularly.
+- Conclusion and sources.
 
 ╚╚\|░▄░\|╝╝
 {: .center}
+
+### Have Multiple Windows Up Within One Terminal Window
+
+#### What's a Buffer? Will it discourage those pesky .swp files?
+
+After doing some research, I see that what I actually want is to have multiple buffers within one Terminal tab. Some great history about Vim windows / tabs versus Vim buffers (along with other interesting Vimformation) can be found in Josh Davis' blog post [Vim Tab Madness. Buffers vs Tabs](http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/). The main gist of why to use buffers instead of tabs is that we're already using a singular buffer every time we open a new tab, because each tab is a view into Vim, and there's no need to have more than one Tab open when we can access all the info we need (and more easily transfer info between different buffers, fingers crossed) with just one view. I think. Long story short, according to Josh, 
+  
+> A buffer is the in-memory text of a file.   
+ A window is a viewport on a buffer.  
+ A tab page is a collection of windows.
+
+In other editors, tabs exist to represent particular files you're moving
+between, but you're not going to use one tab to represent interchangeable files.
+Similarly, once Vim is open once, it's easiest to access each file by individual
+buffers. 
+
+Since I've started using Vim, I keep running into this message: 
+
+![swp file already exists screen shot](/assets/images/swp_message.png)
+
+I've hated it. This happens because, like it says, I probably have this same info open in another tab. Vim knows that it's open somewhere not in this Vim session, but it doesn't know that it's necessarily in another Vim session. What this message is saying is that I'm essentially editing a new version of this file, instead of the text of the file that's saved in one place in my history. This is a good way to lose changes that you're making in one of the two versions of the same file that are open. 
+
+When using buffers, however, even if you have a split window with the same buffer on both sides, any changes you make on one side of the split will be simultaneously executed in the other side of the split, because you're looking at the same place, twice. 
+
+![vim tabs versus vim buffers for the same file](/assets/gifs/vim_buffers.gif)
+
+
+
+
+http://www.moolenaar.net/habits.html
+
+what's a Makefile?
+
+Use % to jump from an open brace to its matching closing brace. Or from a "#if" to the matching "#endif". Actually, % can jump to many different matching items. It is very useful to check if () and {} constructs are balanced properly.
+
+Use gd to jump from the use of a variable to its local declaration.
+
+The . command repeats the last change. A change, in this context, is inserting, deleting or replacing text. 
+
+you might want to mark the location with the m command
+
+Vim has a completion mechanism that makes this a whole lot easier. It looks up words in the file you are editing, and also in #include'd files. You can type "XpmCr", then hit CTRL-N and Vim will expand it to "XpmCreatePixmapFromData" for you.
+
+When you are typing a phrase or sentence multiple times, there is an even quicker approach. Vim has a mechanism to record a macro. You type qa to start recording into register 'a'. Then you type your commands as usual and finally hit q again to stop recording. When you want to repeat the recorded commands you type @a. There are 26 registers available for this.
+
+To create a new abbreviation, type :abbr [abbreviation] [desired word]; for example, <code>:abbr docu document</code>. To list all abbreviations, type <code>:ab</code>. To remove all abbreviations, type <code>:abc</code>, or <code>:abclear</code>. To unabbreviate a single word, like docu, type <code>:una docu</code>.
+
+Ctrl-O and Ctrl-I lets you move between the movement that Vim has been
+recording. You can jump within a file on between buffers.
