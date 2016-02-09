@@ -11,19 +11,20 @@ This is my first of several posts keeping track of what I'm learning. I'm going 
 ╚╚\|░▄░\|╝╝
 {: .center}
 
-1. What relevant things/knowledge did I already have before setting out to put up this blog?
+1. [What relevant things/knowledge did I already have before setting out to put up this blog?](#already)
 
-2. What new things did I need to install/get acquainted with to get this site up?
+2. [What new things did I need to install/get acquainted with to get this site up?](#new)
 
-3. What are my next steps?
+3. [What are my next steps?](#next)
 
-╚╚\|░▄░\|╝╝
 {: .center}
+╚╚\|░▄░\|╝╝
 
+{: id="already"}
 What did I already have?
 ===============================
 
-- An interest in getting a blog up to document and motivate my progress. 
+- An interest in getting a blog up to document and motivate my progress.
 - A computer and internet browser and internet connection.
 - An intro  understanding of the terminal command line (currently using a mac laptop). The commands I feel cool about are ls, cd, touch, mkdir, cp, mv, open, rm, rm -r, and then... what's it called... how to use executibles (like "vim [open this please]" and "git [do this please]"
 - A basic understanding of the vim text editor (like, how to move my cursor around a little, how to edit text, how to search, how to save/quit. Lots to learn and I keep forgetting how to scroll!).
@@ -42,16 +43,19 @@ What did I already have?
 - A basic understanding of the javascript language
 - A very basic understanding of the ruby language
 
-what new things did I learn?
+{: id="new"}
+What new things did I learn?
 ===============================
 
 
 - About the existence of [Octopress](http://octopress.org/), which is "a blogging framework for hackers." Oh man -- I just went to the Octopress site and it looks like the guy who put out Octopress, Brandon Mathis, *just* put up a [post announcing Octopress version 3.0](http://octopress.org/2015/01/15/octopress-3.0-is-coming/){:target="_blank"}, which is going to be a full re-write. For my needs, it turned out that I didn't need the majority of Octopress' features, so I decided to go with the website generator [Jekyll](https://www.jekyllrb.com){:target="_blank"} that Octopress is an extension of. According to the reasoning behind this 3.0 release, though, it sounds like I should take a second look at getting to know Octopress, maybe for a future project.
 - About [Jekyll](https://www.jekyll.rb){:target="_blank"}, which I'm using to put up this blog, currently. Jekyll is a static website generator which can be implemented from the command line easily with minimal knowledge of web development. To get this site up and running on my free github domain here, I used Barry Clark's article [Build a Blog with Jekyll and Github Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/){:target="_blank"}, which discusses how to install Jekyll locally, modify Jekyll, and push Jekyll up to your own custom Github-hosted page. This article was a perfect walk-through for what I was looking for.  
-- About [hub](https://github.com/github/hub){:target="_blank"}, which extends the capabilities of using git in your terminal. Hub lets you create repos directly from the command line, eliminating some extra steps in the browser. My understanding of it doesn't speeds things up dramatically, but for whatever reason, it makes things more straight forward in a really satisfying way. After installing hub, mistakenly deleting the .bashrc file, uninstalling hub, uninstalling git, and reinstalling git (which, if I remember right, is what restored my [happy git environmenton os x](https://gist.github.com/trey/2722934){:target="_blank"}, I was finally able <code>create</code> repos directly from my command line (instead of <code>cloning</code> existing repos from my Github account)
+- About [hub](https://github.com/github/hub){:target="_blank"}, which extends the capabilities of using git in your terminal. Hub lets you create repos directly from the command line, eliminating some extra steps in the browser. My understanding of it doesn't speeds things up dramatically, but for whatever reason, it makes things more straight forward in a really satisfying way. After installing hub, mistakenly deleting the .bashrc file, mucking around with SSH keys in github, uninstalling hub, uninstalling git, reinstalling git (which, if I remember right, is what restored my [happy git environmenton os x](https://gist.github.com/trey/2722934){:target="_blank"}), and finally reinstalling hub, I was finally able <code>create</code> repos directly from my command line (instead of <code>cloning</code> existing repos from my Github account). It's so refreshingly straightforward:
+    
 - Very basic markdown syntax, (i.e. how to make links and how to display images), via Adam Pritchard's [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet){:target="_blank"}. I can't seem to get ~~strikethroughs~~ to work, which is ~~frustrating~~.
 - How to add plug-ins to my Jekyll directory. Right now, the only one I'm using is [jemoji](https://github.com/jekyll/jemoji){:target="_blank"}, which lets me use [any of these emoji](http://www.emoji-cheat-sheet.com/){:target="_blank"} anywhere on this site. Jemoji is a gem, and to add it in here, the readme for the jemoji repo told me I just needed to add <code>gem 'jemoji'</code> to my Gemfile and add <code>gems:[return][tab]- jemoji</code> to my \_config.yml file. I didn't originally have a Gemfile anywhere in this jekyll directory, so I used <code>bundle init</code> (which uses the gem-management tool [bundler](http://bundler.io/){:target="_blank"}, which organizes the gems you're using in any particular project, from what I understand). This command seems to just make that good ole Gemfile, with a couple lines written in there. If I just make the file myself and write those same lines in myself, does that do the same thing? Anyway, now I can use emoji in these posts, though it sounds like I need to do a lot of reading up on how exactly gems work. This brings me to my final section.
 
+{: id="next"}
 What's next?
 ============
 
