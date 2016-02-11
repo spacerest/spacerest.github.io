@@ -13,10 +13,10 @@ Hey there! Today I'd like to set up my vim environment to eliminate some of the 
 
 - My goals:
   1. [Have multiple vim windows up within one terminal window.](#goal1)
-  2. Fix how syntax is displaying in my markdown files (some characters, like underscores in file names, can't be escaped and funk up the highlighting in the rest of my file). Also fix things so that I can see any trailing white space.
-  3. Integrate auto-close tags like <code>def ... end</code> and <code>{ ... }</code>
-  4. Compile a list of the commands I'd like to be using regularly.
-- Conclusion and sources.
+  2. [Fix how syntax is displaying in my markdown files.](#goal2) (some characters, like underscores in file names, can't be escaped and funk up the highlighting in the rest of my file). Also fix things so that I can see any trailing white space.
+  3. [Integrate auto-close tags like <code>def ... end</code> and <code>{ ... }</code>.](#goal3)
+  4. [Compile a list of the commands I'd like to be using regularly.](#goal3)
+- [Conclusion and sources.](#conclusion)
 
 {: .center}
 ╚╚\|░▄░\|╝╝
@@ -28,24 +28,28 @@ Hey there! Today I'd like to set up my vim environment to eliminate some of the 
 
 After doing some research, I see that what I actually want is to have multiple buffers within one Terminal tab. Some great history about Vim windows / tabs versus Vim buffers (along with other interesting Vimformation) can be found in Josh Davis' blog post [Vim Tab Madness. Buffers vs Tabs](http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/). The main gist of why to use buffers instead of tabs is that we're already using a singular buffer every time we open a new tab, because each tab is a view into Vim, and there's no need to have more than one Tab open when we can access all the info we need (and more easily transfer info between different buffers, fingers crossed) with just one view. I think. Long story short, according to Josh, 
   
-> A buffer is the in-memory text of a file.   
+> A buffer is the in-memory text of a file.  
  A window is a viewport on a buffer.  
  A tab page is a collection of windows.
 
 In other editors, tabs exist to represent particular files you're moving between, but you're not going to use one tab to represent interchangeable files. Similarly, once Vim is open once, it's easiest to access each file by individual buffers. 
 
 Since I've started using Vim, I keep running into this message: 
+
+
 {: .center}
 ![swp file already exists screen shot](/assets/images/swp_message.png)
 
-I've hated it. This happens because, like it says, I probably have this same info open in another tab. Vim knows that it's open somewhere not in this Vim session, but it doesn't know that it's necessarily in another Vim session. What this message is saying is that I'm essentially editing a new version of this file, instead of the text of the file that's saved in one place in my history. This is a good way to lose changes that you're making in one of the two versions of the same file that are open. 
+The worst! This happens because, like it says, I probably have this same info open in another tab. Vim knows that it's open somewhere not in this Vim session, but it doesn't know that it's necessarily in another Vim session. What this message is saying is that I'm essentially editing a new version of this file, instead of the text of the file that's saved in one place in my history. This is a good way to lose changes that you're making in one of the two versions of the same file that are open. 
 
 When using buffers, however, even if you have a split window with the same buffer on both sides, any changes you make on one side of the split will be simultaneously executed in the other side of the split, because you're looking at the same place, twice. 
 
 {: .center}
 ![vim tabs versus vim buffers for the same file](/assets/gifs/vim_buffers.gif)
 
-So much simpler.
+Much easier without the fear that comes with those .swp error messages.
+
+**Update**: Before pushing up this blog post, I accidentally deleted the contents of this whole site on my computer. I recovered most of the blog by cloning it from the repository on Github, but wouldn't have recovered any of this particular post if it hadn't been for those handy .swp files. I get it now.
 
 #### Basic Steps for Opening and Navigating Between Buffers
 
@@ -60,6 +64,67 @@ Play around with the <code>Ctrl-w</code> by following it with an <code>n</code> 
 To save and close out each buffer, go with the regular old <code>:w</code> and <code>:q</code>.
 
 Anyway, that’s the deepest that I’m going to go into buffers today. I’ll save mapping for another day.
+
+{: id="goal2"}
+### Fix Syntax in Markdown Files
+
+This one was surprisingly easy: all sources led me to PlasticBoy's extension on Github, [Vim-Markdown](https://github.com/plasticboy/vim-markdown), which includes installation instructions. I already have [Vundle](https://github.com/VundleVim/Vundle.vim) already on my computer, which facilitates easy plug-in installation.
+
+{: .center}
+![screen shot of "vundle about"](/assets/images/vundle.png)
+
+To get Vundle, I just followed the steps on the readme. First, I ran 
+
+  <code>
+    $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  </code>
+
+and then modified my .vimrc file (which you can reach by running
+
+  <code>
+    $ vim ~/.vimrc
+  </code>
+
+which will either pop into your existing .vimrc file or make one for you, if there isn't one already) to look like this
+
+<pre>
+  <code>
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+
+    call vundle#end()
+  </code>
+</pre>
+
+If this is your entire .vimrc file, that's okay; you should only have in there what you want in there.
+
+Vundle will handle any plugins you want to use with Vim going forward, so to integrate the PlasticBoy/Vim-Markdown plugin that I need to make my Markdown look better, just follow the simple instructions at PlasticBoy's repo:
+
+{: .center}
+![how to install plasticboy/vim-markdown](/assets/images/plasticboy.png)
+
+The <code>:so</code> command is short for "source," meaning that's where the plugins you're installing are listed. After following the above steps, when running :PluginInstall, you might see something like this:
+
+{: .center}
+![installing vundle plugins](/assets/gifs/vundle-install.gif)
+
+Again, pretty easy. Just as a general note, the L9 plug-in you see there, that's something that's been recommended to me but that I honestly don't know too much about. I did some research, but everything I found basically said, "read the source code," and there's a lot of code in there, so I'm not exactly sure what it does. In the near future, I'll probably delete the directory (all these plug-ins, including Vundle, can be found at by going over to
+
+<code>
+  $ cd ~/.vim/bundle
+</code>
+
+and deleting it to see if I lose any functionability. That aside, thanks to Vundle and PlasticBoy's plug-in, my Markdown is looking so much better. As an added and unexpected bonus, I even have the extra white spaces highlighted in yellow! Hoorah.
+
+{: id="goal3"}
+### Auto-close Tags
+
+According to Luke Maciak, on a post [3 Tiny Vim Plugins That Will Make Your Life Easier](http://www.terminally-incoherent.com/blog/2014/04/02/3-tiny-vim-plugins-that-will-make-your-life-easier/), there's a simple answer to this. It seems like the secrets to Vim are plugins and memorization. 
+
+He points us over to [Vim-Autoclose](https://github.com/Townk/vim-autoclose), and I'm going to follow the steps we took earlier to get this plugin installed just like the rest. 
+
+{: .center}
+![gif of auto-closing test](/assets/gifs/autoclose.gif)
 
 {::comment}
 http://www.moolenaar.net/habits.html
