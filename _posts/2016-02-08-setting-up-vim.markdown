@@ -126,10 +126,18 @@ He points us over to [Vim-Autoclose](https://github.com/Townk/vim-autoclose), an
 {: .center}
 ![gif of auto-closing test](/assets/gifs/autoclose.gif)
 
+
+
+{: id="conclusion"}
+### Conclusion and sources
+
+
+
+[How I Learned to Stop Worrying and Love Vim Buffers](http://eseth.org/2007/vim-buffers.html)
+
 {::comment}
 http://www.moolenaar.net/habits.html
 
-what's a Makefile?
 
 Use % to jump from an open brace to its matching closing brace. Or from a "#if" to the matching "#endif". Actually, % can jump to many different matching items. It is very useful to check if () and {} constructs are balanced properly.
 
