@@ -114,7 +114,7 @@ Again, pretty easy. Just as a general note, the L9 plug-in you see there, that's
   $ cd ~/.vim/bundle
 </code>
 
-) to see if I lose any functionability. 
+) to see if I lose any functionality. 
 
 Leaving the mystery of L9 alone for now, thanks to Vundle and PlasticBoy's plug-in, my Markdown is looking so much better. As an added and unexpected bonus, I even have the trailing white spaces highlighted in yellow without any extra steps. Hoorah.
 
@@ -132,13 +132,32 @@ He points us over to [Vim-Autoclose](https://github.com/Townk/vim-autoclose), an
 
 Success.
 
+{: id="goal4"}
+### Vim shortcuts to remember
+
+Not surprisingly, my online travels keep bringing me back to [these Vim docs](http://www.vim.org/docs.php){:target="_blank"}. Bram Moolenaar, the guy who made Vim out of vi, has a pretty nice article [Seven effective habits of Vim editing](http://www.moolenaar.net/habits.html){:target="_blank"} that I also found helpful.
+
+Some keystrokes for me to work on:
+
+- <code>%</code> to move between matching braces and between <code>#if</code> to the matching <code>#endif</code>.
+- <code>gd</code> to jump from the use of a variable to its local declaration.
+- <code>.</code> to repeat the last change.
+- <code>m</code> followed by another letter to mark the current location, and <code>'</code> followed by the same letter to go back to the beginning of the line of the mark, or <code>`</code> to go back to the exact position of the mark. Precede either of these with a <code>d</code> to delete all the text between the current location and the mark line or position! <code>:marks</code> to list all the marks currently on file. 
+- <code>:abbr [abbreviation] [desired word]</code> to make an abbreviation for a word. <code>:ab</code> to list all current abbreviations, <code>:abc</code> to clear all current abbreviations, and <code>:una [abbreviation]</code> to remove a specific abbreviation.
+- <code>Ctrl-O</code> and <code>Ctrl-I</code> to move forwards in your position history. Vim is always watching.
+- <code>Ctrl-U</code> and <code>Ctrl-D</code> to scroll up and down half-pages.
+
 {: id="conclusion"}
 ### Conclusion and sources
 
-Vim gets to be more fun each time I investigate. I see vimtutor and Moose Tracks in my future. 
+Vim gets to be more fun each time I investigate. I see vimtutor and Moose Tracks in my future. :crystal_ball:
 
-[How I Learned to Stop Worrying and Love Vim Buffers](http://eseth.org/2007/vim-buffers.html)
-Luke Maciak's [3 Tiny Vim Plugins That Will Make Your Life Easier](http://www.terminally-incoherent.com/blog/2014/04/02/3-tiny-vim-plugins-that-will-make-your-life-easier/)
+- Seth Houses's [How I Learned to Stop Worrying and Love Vim Buffers](http://eseth.org/2007/vim-buffers.html){:target="_blank"}
+- Luke Maciak's [3 Tiny Vim Plugins That Will Make Your Life Easier](http://www.terminally-incoherent.com/blog/2014/04/02/3-tiny-vim-plugins-that-will-make-your-life-easier/)
+- PlasticBoy's extension on Github, [Vim-Markdown](https://github.com/plasticboy/vim-markdown){:target="_blank"}
+- [Vundle](https://github.com/VundleVim/Vundle.vim){:target="_blank"}
+- [Vim](http://www.vim.org/docs.php){:target="_blank"}
+- Bram Moolenaar's [Seven effective habits of Vim editing](http://www.moolenaar.net/habits.html){:target="_blank"}
 
 {::comment}
 http://www.moolenaar.net/habits.html
