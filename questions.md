@@ -12,4 +12,4 @@ permalink: /questions/
 6. Why have an RSS-feed?
 7. What does [shift]-k do in vim?
 8. What's a makefile?
-
+9. Should I be storing gifs and images here in my root directory, or should I link to them over on imgur? 

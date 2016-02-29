@@ -114,7 +114,9 @@ Again, pretty easy. Just as a general note, the L9 plug-in you see there, that's
   $ cd ~/.vim/bundle
 </code>
 
-and deleting it to see if I lose any functionability. That aside, thanks to Vundle and PlasticBoy's plug-in, my Markdown is looking so much better. As an added and unexpected bonus, I even have the extra white spaces highlighted in yellow! Hoorah.
+) to see if I lose any functionability. 
+
+Leaving the mystery of L9 alone for now, thanks to Vundle and PlasticBoy's plug-in, my Markdown is looking so much better. As an added and unexpected bonus, I even have the trailing white spaces highlighted in yellow without any extra steps. Hoorah.
 
 {: id="goal3"}
 ### Auto-close Tags
@@ -123,17 +125,20 @@ According to Luke Maciak, on a post [3 Tiny Vim Plugins That Will Make Your Life
 
 He points us over to [Vim-Autoclose](https://github.com/Townk/vim-autoclose), and I'm going to follow the steps we took earlier to get this plugin installed just like the rest. 
 
+
 {: .center}
 ![gif of auto-closing test](/assets/gifs/autoclose.gif)
 
 
+Success.
 
 {: id="conclusion"}
 ### Conclusion and sources
 
-
+Vim gets to be more fun each time I investigate. I see vimtutor and Moose Tracks in my future. 
 
 [How I Learned to Stop Worrying and Love Vim Buffers](http://eseth.org/2007/vim-buffers.html)
+Luke Maciak's [3 Tiny Vim Plugins That Will Make Your Life Easier](http://www.terminally-incoherent.com/blog/2014/04/02/3-tiny-vim-plugins-that-will-make-your-life-easier/)
 
 {::comment}
 http://www.moolenaar.net/habits.html
