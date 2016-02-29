@@ -26,9 +26,9 @@ What did I already have?
 
 - An interest in getting a blog up to document and motivate my progress.
 - A computer and internet browser and internet connection.
-- An intro  understanding of the terminal command line (currently using a mac laptop). The commands I feel cool about are ls, cd, touch, mkdir, cp, mv, open, rm, rm -r, and then... what's it called... how to use executibles (like "vim [open this please]" and "git [do this please]"
+- An intro  understanding of the terminal command line (currently using a mac laptop). The commands I feel cool about are ls, cd, touch, mkdir, cp, mv, open, rm, rm -r, and then... what's it called... how to use executables (like "vim [open this please]" and "git [do this please]"
 - A basic understanding of the vim text editor (like, how to move my cursor around a little, how to edit text, how to search, how to save/quit. Lots to learn and I keep forgetting how to scroll!).
-- A github account and a basic understanding of the git executible. More or less, my git go-to's were (and pretty much still are) the following:
+- A github account and a basic understanding of the git executable. More or less, my git go-to's were (and pretty much still are) the following:
 <pre>
   <code>
     $ git clone [url]
