@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-This is my first of several posts keeping track of what I'm learning. I'm going to keep this particular site code-specific (i.e. you won't see any posts about how to break nail-biting habits or how to resurrect my dead plants). Right now, I'd like to touch on the following:  
+This is my first of several posts keeping track of what I'm learning. As a TLDR warning, today's post is documentation for me to look back on ("Hey girl, here's where you started, look at what you've learned since then!"). I'm going to keep this particular site code-specific (i.e. you won't see any posts about how to break nail-biting habits or how to resurrect my dead plants). Right now, I'd like to touch on the following:  
 
 ╚╚\|░▄░\|╝╝
 {: .center}
