@@ -9,7 +9,7 @@
 title: notebook [=|=] 
 email: sadiemparker@gmail.com 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://spacerest.github.io" # the base hostname & protocol for your site
+url: "sadieparker.xyz" # the base hostname & protocol for your site
 twitter_username: sad1eparker 
 github_username: spacerest 
 comments: true
