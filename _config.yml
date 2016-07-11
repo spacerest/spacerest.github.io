@@ -1,4 +1,3 @@
-redirect_to: sadieparker.xyz
 
 # Welcome to Jekyll!
 
@@ -17,4 +16,4 @@ markdown: kramdown
 # Gems
 gems:
   - jemoji
-  - redirect_from
+  - jekyll-redirect-from 
