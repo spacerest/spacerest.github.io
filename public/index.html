@@ -6,72 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>notebook [=|=]</title>
+  <title>[=|=] notebook</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="sadieparker.xyz/">
-  <link rel="alternate" type="application/rss+xml" title="notebook [=|=]" href="sadieparker.xyz/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="[=|=] notebook" href="sadieparker.xyz/feed.xml">
   <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
   <script src="/assets/scripts/jquery-3.1.0.min.js"></script>
 </head>
 
 
-  <body>
+  <body class="main_page">
 
-    <header class="site-header" id="header-fixer">
+    
+<div class="page_header floating_element">
+        <!--<img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-1/c27.0.160.160/p160x160/14563495_10207097449465539_1324736457981214159_n.jpg?oh=d99dd28bcba425fe81fcaf8c8fdf8dbc&oe=58BD5354" alt="Ubuntu Logo" class="floating_element"/>-->
+        <span class="floating_element">
+	  <div class="site-title">
+	  [=|=] notebook
+	  </div>
+        </span>
+      </div>
+        <div class="section_header section_header_grey">
+	  <script type="text/javascript" src="/assets/scripts/jquery-3.1.0.min.js"></script>
 
+    <nav class="table_of_contents floating_element site-nav">
 
-   
-  <script type="text/javascript" src="/assets/scripts/jquery-3.1.0.min.js"></script>
-
-    <script>
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 157){
-	$("#fixer").addClass("fix-title").removeClass("site-title");
-	$("#header-fixer").addClass("fix-header").removeClass("site-header");
-	$("#placeholder").addClass("placeholder");
-	$("#opaquer").addClass("nav-opaque").removeClass("site-nav");
-      }
-      else {
-	$("#fixer").removeClass("fix-title").addClass("site-title");
-	$("#header-fixer").addClass("site-header").removeClass("fix-header");
-	$("#placeholder").removeClass("placeholder");
-	$("#opaquer").removeClass("nav-opaque").removeClass("site-title").addClass("site-nav");
-      }});
-  </script>
-    <div class="wrap">
-    <a class="site-title" id="fixer" href="/">notebook [=|=]</a>
-    </div>
-    <nav class="site-nav" id="opaquer">
-    <script>
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 210){
-	console.log("over 240")
-      }
-      else {
-      }});
-      </script>
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
+    <a href="#" class="menu-icon">
+      <h3>table of contents</h3>
+        <!--<svg viewBox="0 0 18 15">
           <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
           <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
           <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
+        </svg>-->
       </a>
 
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">about me</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/about/">about this site</a>
+	</div>
           
         
           
-          <a class="page-link" href="/contact/">contact</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/contact/">contact</a>
+	</div>
           
         
           
-          <a class="page-link" href="/">posts</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/">posts</a>
+	</div>
           
         
           
@@ -81,11 +69,15 @@
           
         
           
-          <a class="page-link" href="/questions/">questions for myself</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/questions/">questions for myself</a>
+	</div>
           
         
           
-          <a class="page-link" href="/secret"></a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/secret"></a>
+	</div>
           
         
           
@@ -93,47 +85,52 @@
       </div>
     </nav>
 
+    </div>
+
+
+<header class="site-header page_header floating_element" id="header-fixer">
+
 </header>
 
 <div id="placeholder">
 </div>
 
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="content_section floating_element page-content">
+      <div class="wrapper content_section_text">
         <div class="home">
 
-  <h1 class="post-title">posts</h1>
+  <h1 class="post-title section_header section_header_red">posts</h1>
 
-  <div class="post-list">
+  <div class="post-list content_section floating_element">
     
       <ul class="post-list-items">
         <li>
-	  <a class="post-link" href="/2016/09/02/rspec-and-ruby-part-1.html">rspec and ruby - part 1</a><span class="post-meta">Sep 2 2016</span>
+	  <a class="post-link" href="/2016/09/02/rspec-and-ruby-part-1.html">rspec and ruby - part 1</a><span class="post-meta content_section_text">Sep 2 2016</span>
 	</li>
       </ul>
     
       <ul class="post-list-items">
         <li>
-	  <a class="post-link" href="/2016/04/10/sinatra-app.html">sinatra application</a><span class="post-meta">Apr 10 2016</span>
+	  <a class="post-link" href="/2016/04/10/sinatra-app.html">sinatra application</a><span class="post-meta content_section_text">Apr 10 2016</span>
 	</li>
       </ul>
     
       <ul class="post-list-items">
         <li>
-	  <a class="post-link" href="/2016/02/08/setting-up-vim.html">setting up my vim environment</a><span class="post-meta">Feb 8 2016</span>
+	  <a class="post-link" href="/2016/02/08/setting-up-vim.html">setting up my vim environment</a><span class="post-meta content_section_text">Feb 8 2016</span>
 	</li>
       </ul>
     
       <ul class="post-list-items">
         <li>
-	  <a class="post-link" href="/2016/01/17/blog-comment-hosting-services.html">blog comment hosting services</a><span class="post-meta">Jan 17 2016</span>
+	  <a class="post-link" href="/2016/01/17/blog-comment-hosting-services.html">blog comment hosting services</a><span class="post-meta content_section_text">Jan 17 2016</span>
 	</li>
       </ul>
     
       <ul class="post-list-items">
         <li>
-	  <a class="post-link" href="/2016/01/05/hello-world.html">hello world</a><span class="post-meta">Jan 5 2016</span>
+	  <a class="post-link" href="/2016/01/05/hello-world.html">hello world</a><span class="post-meta content_section_text">Jan 5 2016</span>
 	</li>
       </ul>
     
@@ -148,7 +145,7 @@
 
     <footer class="site-footer">
 
-  <div class="wrapper">
+  <div class="wrapper clear-fix">
 
 	<div><span class="footer-stars">* * *</span></div>
 	</br>
@@ -178,7 +175,7 @@
 </footer>
 
     
-    <div class="wrapper">
+    <div class="wrapper content_section_text">
     <div id="disqus_thread"></div>
 <script type="text/javascript">
   var commie = '<commie>';

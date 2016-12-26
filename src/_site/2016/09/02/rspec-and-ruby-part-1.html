@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>rspec and ruby - part 1</title>
+  <meta name="description" content="It’s been a while since I posted last, but I’ve been learning quite a bit the past few months.">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/2016/09/02/rspec-and-ruby-part-1.html">
+  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+  <script src="/assets/scripts/jquery-3.1.0.min.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header" id="header-fixer">
+
+
+   
+  <script type="text/javascript" src="/assets/scripts/jquery-3.1.0.min.js"></script>
+
+    <script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 157){
+	$("#fixer").addClass("fix-title").removeClass("site-title");
+	$("#header-fixer").addClass("fix-header").removeClass("site-header");
+	$("#placeholder").addClass("placeholder");
+	$("#opaquer").addClass("nav-opaque").removeClass("site-nav");
+      }
+      else {
+	$("#fixer").removeClass("fix-title").addClass("site-title");
+	$("#header-fixer").addClass("site-header").removeClass("fix-header");
+	$("#placeholder").removeClass("placeholder");
+	$("#opaquer").removeClass("nav-opaque").removeClass("site-title").addClass("site-nav");
+      }});
+  </script>
+    <div class="wrap">
+    <a class="site-title" id="fixer" href="/"></a>
+    </div>
+    <nav class="site-nav" id="opaquer">
+    <script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 210){
+	console.log("over 240")
+      }
+      else {
+      }});
+      </script>
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">about me</a>
+          
+        
+          
+          <a class="page-link" href="/contact/">contact</a>
+          
+        
+          
+          <a class="page-link" href="/">posts</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/questions/">questions for myself</a>
+          
+        
+          
+          <a class="page-link" href="/secret"></a>
+          
+        
+          
+        
+      </div>
+    </nav>
+
+</header>
+
+<div id="placeholder">
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+   <h1 class="post-link" itemprop="name headline">rspec and ruby - part 1</h1><span class="post-meta"><time datetime="2016-09-02T17:14:55-05:00" itemprop="datePublished">Sep 2 2016</time></h1>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>It’s been a while since I posted last, but I’ve been learning quite a bit the past few months.</p>
+
+<p>What I learned today:</p>
+
+<ul>
+  <li>
+    <p>When using rspec to test whether an exception is raised, the syntax <code>expect( SomeObject.new("zero")).to raise_error(TypeError) )</code> will <strong>not</strong> work, while <code>expect { SomeObject.new("zero")}.to raise_error(TypeError)</code> will; note the use of parentheses versus brackets.</p>
+  </li>
+  <li>
+    <p>How to fold in vim</p>
+  </li>
+  <li>
+    <p>about tainting
+-can’t taint true
+-can taint an object while setting it to a variable me = “me”.taint; me.tainted? ##&gt; true</p>
+  </li>
+  <li>
+    <p>about threads
+http://rubylearning.com/satishtalim/ruby_threads.html
+rb_learning_space taint.rb</p>
+  </li>
+  <li>
+    <p>about rack and make files – <a href="https://blog.engineyard.com/2015/understanding-rack-apps-and-middleware">Understanding Rack Apps and Middleware</a></p>
+  </li>
+  <li>
+    <p>yaml, including this <a href="http://stackoverflow.com/a/13950297/5650506">answer</a> and this <a href="http://rhnh.net/2011/01/31/yaml-tutorial">short tutorial</a></p>
+  </li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+	<div><span class="footer-stars">* * *</span></div>
+	</br>
+
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+	</br>
+	<div><span class="footer-stars">* * *</span></div>
+
+  </div>
+
+</footer>
+
+    
+    <div class="wrapper">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+  var commie = '<commie>';
+  var spacerest = 'spacerest';
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + commie + '.disqus.com/embed.js';
+    dsq.src = '//' + spacerest + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+    </div>
+  </body>
+
+</html>

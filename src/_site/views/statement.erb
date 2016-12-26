@@ -1,0 +1,27 @@
+ 
+<table class='statement'>
+    <thead>
+        <td>transaction</td>
+        <td>amount</td>
+        <td>balance</td>
+        <td>date</td>
+      </thead>
+    <% @bank.get_member(Session[:member_id]).get_account(Session[:account_id]).transaction_history.each do |i| %>
+  
+      <tr>
+  	<td><%= i.description %></td>
+  	<td <% if isNeg?(i.change) %>
+	  class='negative'
+	    <% end %>
+	>
+	    <%= dollarFormat(i.change) %></td>
+  	<td <% if isNeg?(i.balance) %>
+	  class='negative'
+	    <% end %>
+	>
+	    <%= dollarFormat(i.balance) %></td>
+  	<td><%= i.time %></td>
+      </tr>
+  
+    <% end %>
+</table> 

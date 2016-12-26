@@ -11,67 +11,55 @@
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="sadieparker.xyz/2016/01/05/hello-world.html">
-  <link rel="alternate" type="application/rss+xml" title="notebook [=|=]" href="sadieparker.xyz/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="[=|=] notebook" href="sadieparker.xyz/feed.xml">
   <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
   <script src="/assets/scripts/jquery-3.1.0.min.js"></script>
 </head>
 
 
-  <body>
+  <body class="main_page">
 
-    <header class="site-header" id="header-fixer">
+    
+<div class="page_header floating_element">
+        <!--<img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-1/c27.0.160.160/p160x160/14563495_10207097449465539_1324736457981214159_n.jpg?oh=d99dd28bcba425fe81fcaf8c8fdf8dbc&oe=58BD5354" alt="Ubuntu Logo" class="floating_element"/>-->
+        <span class="floating_element">
+	  <div class="site-title">
+	  [=|=] notebook
+	  </div>
+        </span>
+      </div>
+        <div class="section_header section_header_grey">
+	  <script type="text/javascript" src="/assets/scripts/jquery-3.1.0.min.js"></script>
 
+    <nav class="table_of_contents floating_element site-nav">
 
-   
-  <script type="text/javascript" src="/assets/scripts/jquery-3.1.0.min.js"></script>
-
-    <script>
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 157){
-	$("#fixer").addClass("fix-title").removeClass("site-title");
-	$("#header-fixer").addClass("fix-header").removeClass("site-header");
-	$("#placeholder").addClass("placeholder");
-	$("#opaquer").addClass("nav-opaque").removeClass("site-nav");
-      }
-      else {
-	$("#fixer").removeClass("fix-title").addClass("site-title");
-	$("#header-fixer").addClass("site-header").removeClass("fix-header");
-	$("#placeholder").removeClass("placeholder");
-	$("#opaquer").removeClass("nav-opaque").removeClass("site-title").addClass("site-nav");
-      }});
-  </script>
-    <div class="wrap">
-    <a class="site-title" id="fixer" href="/">notebook [=|=]</a>
-    </div>
-    <nav class="site-nav" id="opaquer">
-    <script>
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 210){
-	console.log("over 240")
-      }
-      else {
-      }});
-      </script>
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
+    <a href="#" class="menu-icon">
+      <h3>table of contents</h3>
+        <!--<svg viewBox="0 0 18 15">
           <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
           <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
           <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
+        </svg>-->
       </a>
 
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">about me</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/about/">about this site</a>
+	</div>
           
         
           
-          <a class="page-link" href="/contact/">contact</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/contact/">contact</a>
+	</div>
           
         
           
-          <a class="page-link" href="/">posts</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/">posts</a>
+	</div>
           
         
           
@@ -81,11 +69,15 @@
           
         
           
-          <a class="page-link" href="/questions/">questions for myself</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/questions/">questions for myself</a>
+	</div>
           
         
           
-          <a class="page-link" href="/secret"></a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/secret"></a>
+	</div>
           
         
           
@@ -93,21 +85,26 @@
       </div>
     </nav>
 
+    </div>
+
+
+<header class="site-header page_header floating_element" id="header-fixer">
+
 </header>
 
 <div id="placeholder">
 </div>
 
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="content_section floating_element page-content">
+      <div class="wrapper content_section_text">
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
+  <header class="section_header section_header_red post-header">
    <h1 class="post-link" itemprop="name headline">hello world</h1><span class="post-meta"><time datetime="2016-01-05T17:14:55-07:00" itemprop="datePublished">Jan 5 2016</time></h1>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <div class="content_section_text post-content" itemprop="articleBody">
     <p>This is my first of several posts keeping track of what I’m learning. As a TLDR warning, today’s post is documentation for me to look back on (“Hey girl, here’s where you started, look at what you’ve learned since then!”). I’m going to keep this particular site code-specific (i.e. you won’t see any posts about how to break nail-biting habits or how to resurrect my dead plants). Right now, I’d like to touch on the following:</p>
 
 <p class="center">╚╚|░▄░|╝╝</p>
@@ -126,7 +123,7 @@
 
 <p class="center">╚╚|░▄░|╝╝</p>
 
-<h1 id="already">What did I already have?</h1>
+<h1 id="already" class="section_header">What did I already have?</h1>
 
 <ul>
   <li>An interest in getting a blog up to document and motivate my progress.</li>
@@ -151,7 +148,7 @@
   <li>A very basic understanding of the ruby language</li>
 </ul>
 
-<h1 id="new">What new things did I learn?</h1>
+<h1 id="new" class="section_header">What new things did I learn?</h1>
 
 <ul>
   <li>About the existence of <a href="http://octopress.org/">Octopress</a>, which is “a blogging framework for hackers.” Oh man – I just went to the Octopress site and it looks like the guy who put out Octopress, Brandon Mathis, <em>just</em> put up a <a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/" target="_blank">post announcing Octopress version 3.0</a>, which is going to be a full re-write. For my needs, it turned out that I didn’t need the majority of Octopress’ features, so I decided to go with the website generator <a href="https://www.jekyllrb.com" target="_blank">Jekyll</a> that Octopress is an extension of. According to the reasoning behind this 3.0 release, though, it sounds like I should take a second look at getting to know Octopress, maybe for a future project.</li>
@@ -163,7 +160,7 @@
   <li>How to add plug-ins to my Jekyll directory. Right now, the only one I’m using is <a href="https://github.com/jekyll/jemoji" target="_blank">jemoji</a>, which lets me use <a href="http://www.emoji-cheat-sheet.com/" target="_blank">any of these emoji</a> anywhere on this site. Jemoji is a gem, and to add it in here, the readme for the jemoji repo told me I just needed to add <code>gem 'jemoji'</code> to my Gemfile and add <code>gems:[return][tab]- jemoji</code> to my _config.yml file. I didn’t originally have a Gemfile anywhere in this jekyll directory, so I used <code>bundle init</code> (which uses the gem-management tool <a href="http://bundler.io/" target="_blank">bundler</a>, which organizes the gems you’re using in any particular project, from what I understand). This command seems to just make that good ole Gemfile, with a couple lines written in there. If I just make the file myself and write those same lines in myself, does that do the same thing? Anyway, now I can use emoji in these posts, though it sounds like I need to do a lot of reading up on how exactly gems work. This brings me to my final section.</li>
 </ul>
 
-<h1 id="next">What’s next?</h1>
+<h1 id="next" class="section_header">What’s next?</h1>
 
 <ul>
   <li>Writing 101: learn how to say more with less words.</li>
@@ -238,7 +235,7 @@
 
     <footer class="site-footer">
 
-  <div class="wrapper">
+  <div class="wrapper clear-fix">
 
 	<div><span class="footer-stars">* * *</span></div>
 	</br>
@@ -268,7 +265,7 @@
 </footer>
 
     
-    <div class="wrapper">
+    <div class="wrapper content_section_text">
     <div id="disqus_thread"></div>
 <script type="text/javascript">
   var commie = '<commie>';

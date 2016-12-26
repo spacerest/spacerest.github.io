@@ -11,67 +11,55 @@
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="sadieparker.xyz/2016/02/08/setting-up-vim.html">
-  <link rel="alternate" type="application/rss+xml" title="notebook [=|=]" href="sadieparker.xyz/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="[=|=] notebook" href="sadieparker.xyz/feed.xml">
   <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
   <script src="/assets/scripts/jquery-3.1.0.min.js"></script>
 </head>
 
 
-  <body>
+  <body class="main_page">
 
-    <header class="site-header" id="header-fixer">
+    
+<div class="page_header floating_element">
+        <!--<img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-1/c27.0.160.160/p160x160/14563495_10207097449465539_1324736457981214159_n.jpg?oh=d99dd28bcba425fe81fcaf8c8fdf8dbc&oe=58BD5354" alt="Ubuntu Logo" class="floating_element"/>-->
+        <span class="floating_element">
+	  <div class="site-title">
+	  [=|=] notebook
+	  </div>
+        </span>
+      </div>
+        <div class="section_header section_header_grey">
+	  <script type="text/javascript" src="/assets/scripts/jquery-3.1.0.min.js"></script>
 
+    <nav class="table_of_contents floating_element site-nav">
 
-   
-  <script type="text/javascript" src="/assets/scripts/jquery-3.1.0.min.js"></script>
-
-    <script>
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 157){
-	$("#fixer").addClass("fix-title").removeClass("site-title");
-	$("#header-fixer").addClass("fix-header").removeClass("site-header");
-	$("#placeholder").addClass("placeholder");
-	$("#opaquer").addClass("nav-opaque").removeClass("site-nav");
-      }
-      else {
-	$("#fixer").removeClass("fix-title").addClass("site-title");
-	$("#header-fixer").addClass("site-header").removeClass("fix-header");
-	$("#placeholder").removeClass("placeholder");
-	$("#opaquer").removeClass("nav-opaque").removeClass("site-title").addClass("site-nav");
-      }});
-  </script>
-    <div class="wrap">
-    <a class="site-title" id="fixer" href="/">notebook [=|=]</a>
-    </div>
-    <nav class="site-nav" id="opaquer">
-    <script>
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 210){
-	console.log("over 240")
-      }
-      else {
-      }});
-      </script>
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
+    <a href="#" class="menu-icon">
+      <h3>table of contents</h3>
+        <!--<svg viewBox="0 0 18 15">
           <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
           <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
           <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
+        </svg>-->
       </a>
 
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">about me</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/about/">about this site</a>
+	</div>
           
         
           
-          <a class="page-link" href="/contact/">contact</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/contact/">contact</a>
+	</div>
           
         
           
-          <a class="page-link" href="/">posts</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/">posts</a>
+	</div>
           
         
           
@@ -81,11 +69,15 @@
           
         
           
-          <a class="page-link" href="/questions/">questions for myself</a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/questions/">questions for myself</a>
+	</div>
           
         
           
-          <a class="page-link" href="/secret"></a>
+	<div>
+          <a class="table_of_contents_item floating_element" href="/secret"></a>
+	</div>
           
         
           
@@ -93,21 +85,26 @@
       </div>
     </nav>
 
+    </div>
+
+
+<header class="site-header page_header floating_element" id="header-fixer">
+
 </header>
 
 <div id="placeholder">
 </div>
 
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="content_section floating_element page-content">
+      <div class="wrapper content_section_text">
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
+  <header class="section_header section_header_red post-header">
    <h1 class="post-link" itemprop="name headline">setting up my vim environment</h1><span class="post-meta"><time datetime="2016-02-08T04:34:15-07:00" itemprop="datePublished">Feb 8 2016</time></h1>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <div class="content_section_text post-content" itemprop="articleBody">
     <p>Hey there! Today I’d like to set up my vim environment to eliminate some of the extra steps I’ve been taking when writing.</p>
 
 <p class="center">╚╚|░▄░|╝╝</p>
@@ -126,7 +123,7 @@
 
 <p class="center">╚╚|░▄░|╝╝</p>
 
-<h3 id="goal1">Have Multiple Windows Up Within One Terminal Window</h3>
+<h3 id="goal1" class="section_header">Have Multiple Windows Up Within One Terminal Window</h3>
 
 <h4 id="whats-a-buffer-will-it-discourage-those-pesky-swp-files">What’s a Buffer? Will it discourage those pesky .swp files?</h4>
 
@@ -168,7 +165,7 @@
 
 <p>Anyway, that’s the deepest that I’m going to go into buffers today. I’ll save mapping for another day.</p>
 
-<h3 id="goal2">Fix Syntax in Markdown Files</h3>
+<h3 id="goal2" class="section_header">Fix Syntax in Markdown Files</h3>
 
 <p>This one was surprisingly easy: all sources led me to PlasticBoy’s extension on Github, <a href="https://github.com/plasticboy/vim-markdown">Vim-Markdown</a>, which includes installation instructions. I already have <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> already on my computer, which facilitates easy plug-in installation.</p>
 
@@ -217,7 +214,7 @@
 
 <p>Leaving the mystery of L9 alone for now, thanks to Vundle and PlasticBoy’s plug-in, my Markdown is looking so much better. As an added and unexpected bonus, I even have the trailing white spaces highlighted in yellow without any extra steps. Hoorah.</p>
 
-<h3 id="goal3">Auto-close Tags</h3>
+<h3 id="goal3" class="section_header">Auto-close Tags</h3>
 
 <p>According to Luke Maciak, on a post <a href="http://www.terminally-incoherent.com/blog/2014/04/02/3-tiny-vim-plugins-that-will-make-your-life-easier/">3 Tiny Vim Plugins That Will Make Your Life Easier</a>, there’s a simple answer to this. It seems like the secrets to Vim are plugins and memorization.</p>
 
@@ -227,7 +224,7 @@
 
 <p>Success.</p>
 
-<h3 id="goal4">Vim shortcuts to remember</h3>
+<h3 id="goal4" class="section_header">Vim shortcuts to remember</h3>
 
 <p>Not surprisingly, my online travels keep bringing me back to <a href="http://www.vim.org/docs.php" target="_blank">these Vim docs</a>. Bram Moolenaar, the guy who made Vim out of vi, has a pretty nice article <a href="http://www.moolenaar.net/habits.html" target="_blank">Seven effective habits of Vim editing</a> that I also found helpful.</p>
 
@@ -243,7 +240,7 @@
   <li><code>Ctrl-U</code> and <code>Ctrl-D</code> to scroll up and down half-pages.</li>
 </ul>
 
-<h3 id="conclusion">Conclusion and sources</h3>
+<h3 id="conclusion" class="section_header">Conclusion and sources</h3>
 
 <p>Vim gets to be more fun each time I investigate. I see vimtutor and Moose Tracks in my future. <img class="emoji" title=":crystal_ball:" alt=":crystal_ball:" src="https://assets.github.com/images/icons/emoji/unicode/1f52e.png" height="20" width="20" align="absmiddle" /></p>
 
@@ -285,7 +282,7 @@ recording. You can jump within a file on between buffers. -->
 
     <footer class="site-footer">
 
-  <div class="wrapper">
+  <div class="wrapper clear-fix">
 
 	<div><span class="footer-stars">* * *</span></div>
 	</br>
@@ -315,7 +312,7 @@ recording. You can jump within a file on between buffers. -->
 </footer>
 
     
-    <div class="wrapper">
+    <div class="wrapper content_section_text">
     <div id="disqus_thread"></div>
 <script type="text/javascript">
   var commie = '<commie>';

@@ -20,7 +20,7 @@ This is my first of several posts keeping track of what I'm learning. As a TLDR 
 {: .center}
 ╚╚\|░▄░\|╝╝
 
-{: id="already"}
+{: id="already" class="section_header"}
 What did I already have?
 ===============================
 
@@ -43,7 +43,7 @@ What did I already have?
 - A basic understanding of the javascript language
 - A very basic understanding of the ruby language
 
-{: id="new"}
+{: id="new" class="section_header"}
 What new things did I learn?
 ===============================
 
@@ -55,7 +55,7 @@ What new things did I learn?
 - Very basic markdown syntax, (i.e. how to make links and how to display images), via Adam Pritchard's [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet){:target="_blank"}. I can't seem to get ~~strikethroughs~~ to work, which is ~~frustrating~~.
 - How to add plug-ins to my Jekyll directory. Right now, the only one I'm using is [jemoji](https://github.com/jekyll/jemoji){:target="_blank"}, which lets me use [any of these emoji](http://www.emoji-cheat-sheet.com/){:target="_blank"} anywhere on this site. Jemoji is a gem, and to add it in here, the readme for the jemoji repo told me I just needed to add <code>gem 'jemoji'</code> to my Gemfile and add <code>gems:[return][tab]- jemoji</code> to my \_config.yml file. I didn't originally have a Gemfile anywhere in this jekyll directory, so I used <code>bundle init</code> (which uses the gem-management tool [bundler](http://bundler.io/){:target="_blank"}, which organizes the gems you're using in any particular project, from what I understand). This command seems to just make that good ole Gemfile, with a couple lines written in there. If I just make the file myself and write those same lines in myself, does that do the same thing? Anyway, now I can use emoji in these posts, though it sounds like I need to do a lot of reading up on how exactly gems work. This brings me to my final section.
 
-{: id="next"}
+{: id="next" class="section_header"}
 What's next?
 ============
 

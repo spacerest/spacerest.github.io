@@ -1,8 +1,9 @@
 ---
 layout: page
-title: about me 
+title: about this site
 permalink: /about/
 ---
 
 
-| Hey! My name is Sadie. I enjoy television, biking, playing and listening to music, and studying programming. This is a blog where I'm theoretically logging things I've been learning related to programming. I might add something else on, sometime. | ![picture of sadie](https://avatars1.githubusercontent.com/u/16748263?v=3&s=460) |
+This site is hosted on a VPS running [Ubuntu](https://www.ubuntu.com/){: target="_blank"} and [Apache 2.4.18](https://httpd.apache.org/docs/2.4/){: target="_blank"}. Double shout out to Apache for the server configuration as well as the theme (I don't make any $$ with this site, but please still contact if there are any issues with copyright infringement). The blog portion of this site is built and maintained with [Jekyll](https://jekyllrb.com/){: target="_blank"}.
+

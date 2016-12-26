@@ -21,7 +21,7 @@ Hey there! Today I'd like to set up my vim environment to eliminate some of the 
 {: .center}
 ╚╚\|░▄░\|╝╝
 
-{: id="goal1"}
+{: id="goal1" class="section_header"}
 ### Have Multiple Windows Up Within One Terminal Window
 
 #### What's a Buffer? Will it discourage those pesky .swp files?
@@ -65,7 +65,7 @@ To save and close out each buffer, go with the regular old <code>:w</code> and <
 
 Anyway, that’s the deepest that I’m going to go into buffers today. I’ll save mapping for another day.
 
-{: id="goal2"}
+{: id="goal2" class="section_header"}
 ### Fix Syntax in Markdown Files
 
 This one was surprisingly easy: all sources led me to PlasticBoy's extension on Github, [Vim-Markdown](https://github.com/plasticboy/vim-markdown), which includes installation instructions. I already have [Vundle](https://github.com/VundleVim/Vundle.vim) already on my computer, which facilitates easy plug-in installation.
@@ -118,7 +118,7 @@ Again, pretty easy. Just as a general note, the L9 plug-in you see there, that's
 
 Leaving the mystery of L9 alone for now, thanks to Vundle and PlasticBoy's plug-in, my Markdown is looking so much better. As an added and unexpected bonus, I even have the trailing white spaces highlighted in yellow without any extra steps. Hoorah.
 
-{: id="goal3"}
+{: id="goal3" class="section_header"}
 ### Auto-close Tags
 
 According to Luke Maciak, on a post [3 Tiny Vim Plugins That Will Make Your Life Easier](http://www.terminally-incoherent.com/blog/2014/04/02/3-tiny-vim-plugins-that-will-make-your-life-easier/), there's a simple answer to this. It seems like the secrets to Vim are plugins and memorization. 
@@ -132,7 +132,7 @@ He points us over to [Vim-Autoclose](https://github.com/Townk/vim-autoclose), an
 
 Success.
 
-{: id="goal4"}
+{: id="goal4" class="section_header"}
 ### Vim shortcuts to remember
 
 Not surprisingly, my online travels keep bringing me back to [these Vim docs](http://www.vim.org/docs.php){:target="_blank"}. Bram Moolenaar, the guy who made Vim out of vi, has a pretty nice article [Seven effective habits of Vim editing](http://www.moolenaar.net/habits.html){:target="_blank"} that I also found helpful.
@@ -147,7 +147,7 @@ Some keystrokes for me to work on:
 - <code>Ctrl-O</code> and <code>Ctrl-I</code> to move forwards in your position history. Vim is always watching.
 - <code>Ctrl-U</code> and <code>Ctrl-D</code> to scroll up and down half-pages.
 
-{: id="conclusion"}
+{: id="conclusion" class="section_header"}
 ### Conclusion and sources
 
 Vim gets to be more fun each time I investigate. I see vimtutor and Moose Tracks in my future. :crystal_ball:

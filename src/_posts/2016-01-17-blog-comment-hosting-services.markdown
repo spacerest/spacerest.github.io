@@ -3,6 +3,7 @@ layout: post
 title: blog comment hosting services
 ---
 
+{: class="section_header"}
 Setting up commenting
 =====================
 
@@ -11,6 +12,7 @@ Hey. This is a short post to timestamp that I put commenting capability on this 
 To set up Disqus here, I followed the steps listed on Ankur Gupta's [Adding Disqus To Your Jekyll](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/){: target="_blank"} and didn't run into any major issues. The only small hiccup I had was in being consistent with the disqus_shortname variable both when setting up my <code>comments.html</code> file and registering this site with the Disqus mainframe. Motherboard. Headquarters.  
 
 
+{: class="section_header"}
 Sources
 ========
 

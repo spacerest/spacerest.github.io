@@ -4,13 +4,13 @@ layout: default
 
 <div class="home">
 
-  <h1 class="post-title">posts</h1>
+  <h1 class="post-title section_header section_header_red">posts</h1>
 
-  <div class="post-list">
+  <div class="post-list content_section floating_element">
     {% for post in site.posts %}
       <ul class="post-list-items">
         <li>
-	  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-meta">{{ post.date | date: "%b %-d %Y" }}</span>
+	  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-meta content_section_text">{{ post.date | date: "%b %-d %Y" }}</span>
 	</li>
       </ul>
     {% endfor %}

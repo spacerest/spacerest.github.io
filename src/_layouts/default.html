@@ -3,19 +3,19 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="main_page">
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="content_section floating_element page-content">
+      <div class="wrapper content_section_text">
         {{ content }}
       </div>
     </div>
 
     {% include footer.html %}
     
-    <div class="wrapper">
+    <div class="wrapper content_section_text">
     {% include comments.html %}
     </div>
   </body>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>hello world</title>
+  <meta name="description" content="This is my first of several posts keeping track of what I’m learning. As a TLDR warning, today’s post is documentation for me to look back on (“Hey girl, her...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/2016/01/05/hello-world.html">
+  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+  <script src="/assets/scripts/jquery-3.1.0.min.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header" id="header-fixer">
+
+
+   
+  <script type="text/javascript" src="/assets/scripts/jquery-3.1.0.min.js"></script>
+
+    <script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 157){
+	$("#fixer").addClass("fix-title").removeClass("site-title");
+	$("#header-fixer").addClass("fix-header").removeClass("site-header");
+	$("#placeholder").addClass("placeholder");
+	$("#opaquer").addClass("nav-opaque").removeClass("site-nav");
+      }
+      else {
+	$("#fixer").removeClass("fix-title").addClass("site-title");
+	$("#header-fixer").addClass("site-header").removeClass("fix-header");
+	$("#placeholder").removeClass("placeholder");
+	$("#opaquer").removeClass("nav-opaque").removeClass("site-title").addClass("site-nav");
+      }});
+  </script>
+    <div class="wrap">
+    <a class="site-title" id="fixer" href="/"></a>
+    </div>
+    <nav class="site-nav" id="opaquer">
+    <script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 210){
+	console.log("over 240")
+      }
+      else {
+      }});
+      </script>
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">about me</a>
+          
+        
+          
+          <a class="page-link" href="/contact/">contact</a>
+          
+        
+          
+          <a class="page-link" href="/">posts</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/questions/">questions for myself</a>
+          
+        
+          
+          <a class="page-link" href="/secret"></a>
+          
+        
+          
+        
+      </div>
+    </nav>
+
+</header>
+
+<div id="placeholder">
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+   <h1 class="post-link" itemprop="name headline">hello world</h1><span class="post-meta"><time datetime="2016-01-05T18:14:55-06:00" itemprop="datePublished">Jan 5 2016</time></h1>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>This is my first of several posts keeping track of what I’m learning. As a TLDR warning, today’s post is documentation for me to look back on (“Hey girl, here’s where you started, look at what you’ve learned since then!”). I’m going to keep this particular site code-specific (i.e. you won’t see any posts about how to break nail-biting habits or how to resurrect my dead plants). Right now, I’d like to touch on the following:</p>
+
+<p class="center">╚╚|░▄░|╝╝</p>
+
+<ol>
+  <li>
+    <p><a href="#already">What relevant things/knowledge did I already have before setting out to put up this blog?</a></p>
+  </li>
+  <li>
+    <p><a href="#new">What new things did I need to install/get acquainted with to get this site up?</a></p>
+  </li>
+  <li>
+    <p><a href="#next">What are my next steps?</a></p>
+  </li>
+</ol>
+
+<p class="center">╚╚|░▄░|╝╝</p>
+
+<h1 id="already">What did I already have?</h1>
+
+<ul>
+  <li>An interest in getting a blog up to document and motivate my progress.</li>
+  <li>A computer and internet browser and internet connection.</li>
+  <li>An intro  understanding of the terminal command line (currently using a mac laptop). The commands I feel cool about are ls, cd, touch, mkdir, cp, mv, open, rm, rm -r, and then… what’s it called… how to use executables (like “vim [open this please]” and “git [do this please]”</li>
+  <li>A basic understanding of the vim text editor (like, how to move my cursor around a little, how to edit text, how to search, how to save/quit. Lots to learn and I keep forgetting how to scroll!).</li>
+  <li>A github account and a basic understanding of the git executable. More or less, my git go-to’s were (and pretty much still are) the following:</li>
+</ul>
+<pre>
+  <code>
+    $ git clone [url]
+    $ git add .
+    $ git status
+    $ git commit -m "this is probably another test"
+    $ git push origin master 
+  </code>
+</pre>
+<ul>
+  <li>A basic understanding of html (thanks to codeacademy and Shay Howe’s <a href="http://learn.shayhowe.com/" target="_blank">Learn to Code HTML &amp; CSS</a>)</li>
+  <li>A basic understanding of css and scss</li>
+  <li>A basic understanding of the javascript language</li>
+  <li>A very basic understanding of the ruby language</li>
+</ul>
+
+<h1 id="new">What new things did I learn?</h1>
+
+<ul>
+  <li>About the existence of <a href="http://octopress.org/">Octopress</a>, which is “a blogging framework for hackers.” Oh man – I just went to the Octopress site and it looks like the guy who put out Octopress, Brandon Mathis, <em>just</em> put up a <a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/" target="_blank">post announcing Octopress version 3.0</a>, which is going to be a full re-write. For my needs, it turned out that I didn’t need the majority of Octopress’ features, so I decided to go with the website generator <a href="https://www.jekyllrb.com" target="_blank">Jekyll</a> that Octopress is an extension of. According to the reasoning behind this 3.0 release, though, it sounds like I should take a second look at getting to know Octopress, maybe for a future project.</li>
+  <li>About <a href="https://www.jekyll.rb" target="_blank">Jekyll</a>, which I’m using to put up this blog, currently. Jekyll is a static website generator which can be implemented from the command line easily with minimal knowledge of web development. To get this site up and running on my free github domain here, I used Barry Clark’s article <a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/" target="_blank">Build a Blog with Jekyll and Github Pages</a>, which discusses how to install Jekyll locally, modify Jekyll, and push Jekyll up to your own custom Github-hosted page. This article was a perfect walk-through for what I was looking for.</li>
+  <li>
+    <p>About <a href="https://github.com/github/hub" target="_blank">hub</a>, which extends the capabilities of using git in your terminal. Hub lets you create repos directly from the command line, eliminating some extra steps in the browser. My understanding of it doesn’t speeds things up dramatically, but for whatever reason, it makes things more straight forward in a really satisfying way. After installing hub, mistakenly deleting the .bashrc file, mucking around with SSH keys in github, uninstalling hub, uninstalling git, reinstalling git (which, if I remember right, is what restored my <a href="https://gist.github.com/trey/2722934" target="_blank">happy git environmenton os x</a>), and finally reinstalling hub, I was finally able <code>create</code> repos directly from my command line (instead of <code>cloning</code> existing repos from my Github account). It’s so refreshingly straightforward:</p>
+  </li>
+  <li>Very basic markdown syntax, (i.e. how to make links and how to display images), via Adam Pritchard’s <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a>. I can’t seem to get ~~strikethroughs~~ to work, which is ~~frustrating~~.</li>
+  <li>How to add plug-ins to my Jekyll directory. Right now, the only one I’m using is <a href="https://github.com/jekyll/jemoji" target="_blank">jemoji</a>, which lets me use <a href="http://www.emoji-cheat-sheet.com/" target="_blank">any of these emoji</a> anywhere on this site. Jemoji is a gem, and to add it in here, the readme for the jemoji repo told me I just needed to add <code>gem 'jemoji'</code> to my Gemfile and add <code>gems:[return][tab]- jemoji</code> to my _config.yml file. I didn’t originally have a Gemfile anywhere in this jekyll directory, so I used <code>bundle init</code> (which uses the gem-management tool <a href="http://bundler.io/" target="_blank">bundler</a>, which organizes the gems you’re using in any particular project, from what I understand). This command seems to just make that good ole Gemfile, with a couple lines written in there. If I just make the file myself and write those same lines in myself, does that do the same thing? Anyway, now I can use emoji in these posts, though it sounds like I need to do a lot of reading up on how exactly gems work. This brings me to my final section.</li>
+</ul>
+
+<h1 id="next">What’s next?</h1>
+
+<ul>
+  <li>Writing 101: learn how to say more with less words.</li>
+  <li>Ruby gems 101: what exactly are they and how do they work?</li>
+  <li>Makeover 101! I’m including a screenshot of what this site looks like right now, in the hopes that one day I’ll have it decked out uniquely to me. It should be fun to compare this original to different versions as things move along. :construction_worker:</li>
+</ul>
+
+<p class="center"><img src="/assets/images/nostylepost.png" alt="image_of_blog_without_style_modifications" /></p>
+
+<ul>
+  <li>XML 101: I need to finish reading this article <a href="http://www.sitepoint.com/really-good-introduction-xml/" target="_blank">a really, really, really good introduction to xml</a> by Tom Myer and explore <strong>/jekyll/feed.xml</strong> a little more. What’s populating the fields in this document? Who’s taking the text I’m inputting here, in <strong>posts/posting-this-post-01-04-2016.markdown</strong>, and putting it in <strong>/jekyll/feed.xml</strong>?</li>
+  <li>Jekyll 101: drawing on the above question, can I map out what’s happening in the different files? At the very least, I’d like to list them out for myself and remember what lives where. Even better, a visual map of what I think is happening.</li>
+  <li>What’s <strong>liquid html</strong>? is that something to do with the brackets and percentage symbols I keep seeing?</li>
+  <li>Keep looking into Markdown. Where does kramdown come in? Is this a modified Markdown? Can I call kramdown “kramerdown,” or is it still too soon? I really love that character on Seinfeld.</li>
+  <li>YML 101</li>
+  <li>Image organization: look into storing your own emoji somewhere in here instead of requesting them on each reload, which is how it seems to be set up right now. Also find out if that’s really how it’s set up right now. Do I care if my emoji don’t show up in my files when I’m not connected to the internet?</li>
+  <li>Figure out how to emulate commands written in terminal here in these posts. it looks like a highlight ruby tag is defaulted in here already; can I highlight other languages?</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">what_lang</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s1">&#39;hi, #{name}. what are you?&#39;</span>
+    <span class="k">if</span> <span class="nb">name</span> <span class="o">==</span> <span class="s1">&#39;ruby&#39;</span>
+      <span class="nb">puts</span> <span class="s1">&#39;oh, hi #{name}!&#39;</span>
+    <span class="k">else</span>
+      <span class="nb">puts</span> <span class="s1">&#39;ah... sorry man, might be a wrong number.&#39;</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+<span class="n">what_lang</span><span class="p">(</span><span class="s1">&#39;ruby&#39;</span><span class="p">)</span>
+<span class="c1">#=&gt; prints &#39;oh, hi ruby!&#39; to STDOUT.</span>
+<span class="n">what_lang</span><span class="p">(</span><span class="s1">&#39;lisp&#39;</span><span class="p">)</span>
+<span class="c1">#=&gt; prints &#39;ah... sorry man, might be a wrong number.&#39;</span></code></pre></div>
+
+<ul>
+  <li>Speaking of the terminal, figure out how to ask vim to stop highlighting everything after an out-of-context underscore, waiting for me to close the emphasis tag.</li>
+</ul>
+
+<p class="center"><img src="http://i.imgur.com/FyVfVCg.gif" alt="not-bold-pls" /></p>
+
+<ul>
+  <li>git 201: check out Roger Dudler’s <a href="http://rogerdudler.github.io/git-guide/" target="_blank">Git - The Simple Guide</a>. I might learn some new tricks and I’m really digging the color scheme and general layout. :shell: :whale2:</li>
+  <li>Can I make this “what’s next” section into a little to-do list, and check them off as I go? I think I have a Javascript-y to-do app stored somewhere, I wonder if I can mix that in with this static-site stuff without messing anything up.</li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Cool, so here I am! I have a list of things done and a list of things to do. I’m looking forward to the days that I won’t be able to put everything that I know into such a compact list but am liking the feeling of compactness right now, so, check, mate! :pushpin: :paperclip: :bowling: :clapper: :tophat: :tea:</p>
+
+<h1 id="sources">Sources</h1>
+
+<ul>
+  <li>Barry Clark’s <a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/" target="_blank">Build a Blog with Jekyll and Github pages</a></li>
+  <li><a href="https://github.com/jekyll/jekyll/issues/3219">Github Issue: Centering Blog Post Images Not Possible #3219</a>: <em>How to Center Images Using Kramdown and CSS</em></li>
+  <li><a href="http://stackoverflow.com/questions/4425198/markdown-target-blank#answer-4705645">Stack Overflow Question: Markdown target=”_blank”</a>: <em>How to Adjust a Link’s Target Attribute in Markdown</em></li>
+  <li>Shay Howe’s <a href="http://learn.shayhowe.com/">Learn to Code HTML &amp; CSS</a></li>
+  <li>Brandon Mathis’ <a href="http://octopress.org/">Octopress</a></li>
+  <li>Brandon Mathis’ <a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/" target="_blank">Post Announcing Octopress version 3.0</a></li>
+  <li><a href="https://www.jekyllrb.com" target="_blank">Jekyll</a></li>
+  <li><a href="https://gist.github.com/trey/2722934" target="_blank">Happy Git Environmenton OS X</a></li>
+  <li>Adam Pritchard’s <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a></li>
+  <li><a href="https://github.com/jekyll/jemoji" target="_blank">Jemoji</a></li>
+  <li><a href="https://github.com/github/hub" target="_blank">hub</a></li>
+  <li>Tom Myer’s <a href="http://www.sitepoint.com/really-good-introduction-xml/" target="_blank">a really, really, really good introduction to xml</a></li>
+  <li><a href="http://bundler.io/" target="_blank">bundler</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+	<div><span class="footer-stars">* * *</span></div>
+	</br>
+
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+	</br>
+	<div><span class="footer-stars">* * *</span></div>
+
+  </div>
+
+</footer>
+
+    
+    <div class="wrapper">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+  var commie = '<commie>';
+  var spacerest = 'spacerest';
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + commie + '.disqus.com/embed.js';
+    dsq.src = '//' + spacerest + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+    </div>
+  </body>
+
+</html>
