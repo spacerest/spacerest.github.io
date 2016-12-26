@@ -1,0 +1,29 @@
+<% if @bank.get_member(Session[:member_id]).account_list.length > 0 %>
+  <form action='update_account' method='post'>
+    <p>which account are you updating?</p>
+    <select name='which_account'>
+      <% @bank.get_member(Session[:member_id]).account_list.each do |i| %>
+        <option 
+	  <% if @bank.get_member(Session[:member_id]).get_account(Session[:account_id]).account_number == i.account_number %>
+	    selected
+	  <% end %>
+	id=<%= i.account_number %>><%= i.account_number %></option>
+      <% end %>
+    </select>
+    <p>what would you like to do?</p>
+    <select name='which_action'>
+      <option value='deposit'>deposit money</option>
+      <option value='withdraw'>withdraw money</option>
+      <option value='statement'>view statement</option>
+    </select>
+    <button type='submit'>submit</button>
+  </form>
+<% end %>
+
+<div class='bottom_option'>
+  <p>would you like to set up a new account?</p>
+  <form action='new_account' method='post'>
+    <button type='submit'>make new account</button>
+  </form>
+</div>
+

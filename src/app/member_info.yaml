@@ -1,0 +1,73 @@
+---
+members:
+- !ruby/object:Member
+  name:
+  - sade
+  - park
+  access_name: sade_park
+  account_list:
+  - !ruby/object:Account
+    balance: 0
+    account_id: 0
+    transaction_history:
+    - !ruby/object:Transaction
+      description: new_account
+      account_number: '00000000'
+      balance: 0
+      change: 0
+      time: 2016-09-23 12:53
+    transaction_id: 0
+    id: 0
+    account_number: '00000000'
+  - !ruby/object:Account
+    balance: 0
+    account_id: 1
+    transaction_history:
+    - !ruby/object:Transaction
+      description: new_account
+      account_number: '00000001'
+      balance: 0
+      change: 0
+      time: 2016-09-23 12:53
+    transaction_id: 0
+    id: 0
+    account_number: '00000001'
+  account_id: 2
+  id: 0
+- !ruby/object:Member
+  name:
+  - josh
+  - hartnett
+  access_name: josh_hartnett
+  account_list:
+  - !ruby/object:Account
+    balance: 0
+    account_id: 0
+    transaction_history:
+    - !ruby/object:Transaction
+      description: new_account
+      account_number: '00010000'
+      balance: 0
+      change: 0
+      time: 2016-09-23 12:53
+    transaction_id: 0
+    id: 1
+    account_number: '00010000'
+  account_id: 1
+  id: 1
+- !ruby/object:Member
+  name:
+  - josh
+  - hartnet
+  access_name: josh_hartnet
+  account_list: []
+  account_id: 0
+  id: 2
+- !ruby/object:Member
+  name:
+  - jake
+  - lewis
+  access_name: jake_lewis
+  account_list: []
+  account_id: 0
+  id: 3

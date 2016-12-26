@@ -1,0 +1,20 @@
+<% if Session[:members].length == 0 %>
+  <p>there's no one here. want to<a href="/signup"><button>sign up?</button></a></p>
+<% elsif Session[:members].length == 1 %>
+  <p>is that you, <%= Session[:members][0] %>? you're the only one here.<p>
+  <p>want to<a href="/signup"><button>add a new member?</button></a></p>
+<% else %>
+<form action='signup_confirm' method='post'>
+  <select name='change_member'>
+  <% Session[:members].each do |i| %>
+    <option 
+      <% if @bank.get_member(Session[:member_id]).access_name = i %>
+	selected
+      <% end %>   
+    value='<%= i %>'><%= i %></option>
+  <% end %>
+  </select>
+  <button type='submit'>submit</button>
+</form>
+
+<% end %>
