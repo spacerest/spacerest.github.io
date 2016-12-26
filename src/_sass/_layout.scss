@@ -40,16 +40,16 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
   }
 
   .page_header {
-    //width: 100%;
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     font-size: $base-font-size * 2;
-
+    height: 99px;
+    width: 100%;
 
     background-color: #F5F6F7;
   }
 
-  .page_header h1 {
+  .page_header span {
     margin: 15px 0px 0px 50px;
 
     font-size: 180%;
@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
 
   .table_of_contents_item {
     clear: left;
-    //width: 100%;
+    width: 100%;
     margin: 4px 0px 0px 0px;
     background-color: #FFFFFF;
     color: #000000;
@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
 
-   margin: 3px 3px 3px 3px;
+    margin: 3px 3px 3px 3px;
     display: inline-block;
     width: 98%;
     background-color: #FFFFFF;
@@ -132,6 +132,7 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
     background-color: #8E9CB2;
     color: #FFFFFF;
     font-weight: bold;
+    font-size: 112%;
     text-align: center;
   }
 
@@ -146,7 +147,7 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
 
   .floating_element {
     position: relative;
-   // float: left;
+    float: left;
   }
 
   .table_of_contents_item a,
@@ -281,7 +282,6 @@ ul, ol, dl, figure {
   @extend .site-header;
   position: fixed;
   //width: 100%;
-  z-index: 3000;
 }
 
 .site-nav {
@@ -344,7 +344,6 @@ ul, ol, dl, figure {
 }
 
 .site-title {
-    z-index: 20;
     font-size: $base-font-size * 2;
     position: relative;
     font-size: 36px;
@@ -360,7 +359,6 @@ ul, ol, dl, figure {
   
 
 .fix-title {
-    z-index: 1000;
     position: fixed;
     top: 0px;
 }
@@ -373,6 +371,8 @@ ul, ol, dl, figure {
     padding: $spacing-unit 0;
     margin: 15px;
     text-align: center;
+    display: inline-block;
+    width: 100%;
 }
 
 .footer-stars {

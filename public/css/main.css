@@ -30,9 +30,11 @@ body, html {
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
   font-size: 32px;
+  height: 99px;
+  width: 100%;
   background-color: #F5F6F7; }
 
-.page_header h1 {
+.page_header span {
   margin: 15px 0px 0px 50px;
   font-size: 180%;
   font-weight: bold; }
@@ -50,6 +52,7 @@ body, html {
 
 .table_of_contents_item {
   clear: left;
+  width: 100%;
   margin: 4px 0px 0px 0px;
   background-color: #FFFFFF;
   color: #000000;
@@ -95,6 +98,7 @@ body, html {
   background-color: #8E9CB2;
   color: #FFFFFF;
   font-weight: bold;
+  font-size: 112%;
   text-align: center; }
 
 .section_header_red {
@@ -104,7 +108,8 @@ body, html {
   background-color: #9F9386; }
 
 .floating_element {
-  position: relative; }
+  position: relative;
+  float: left; }
 
 .table_of_contents_item a,
 .content_section_text a {
@@ -191,8 +196,7 @@ dl, dd, ol, ul, figure {
   position: relative; }
 
 .fix-header {
-  position: fixed;
-  z-index: 3000; }
+  position: fixed; }
 
 .site-nav .menu-icon, .nav-opaque .menu-icon {
   display: none; }
@@ -228,7 +232,6 @@ dl, dd, ol, ul, figure {
       margin-right: 0; } }
 
 .site-title {
-  z-index: 20;
   font-size: 32px;
   position: relative;
   font-size: 36px;
@@ -239,7 +242,6 @@ dl, dd, ol, ul, figure {
     text-decoration: none; }
 
 .fix-title {
-  z-index: 1000;
   position: fixed;
   top: 0px; }
 
@@ -249,7 +251,9 @@ dl, dd, ol, ul, figure {
 .site-footer {
   padding: 30px 0;
   margin: 15px;
-  text-align: center; }
+  text-align: center;
+  display: inline-block;
+  width: 100%; }
 
 .footer-stars {
   text-align: center;
