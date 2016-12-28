@@ -2,69 +2,38 @@
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
   }
-
 h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
  @include media-query($on-palm) {
   }
-
  font-size: 12px;
 }
-
   body, html {
     padding: 3px 3px 3px 3px;
-
     //background-image: url("assets/images/blog_bg.jpg");
     background-color: #D8DBE2;
     font-family: Verdana, sans-serif;
   }
-
   .main_page {
     position: relative;
     display: table;
     width: 100%;
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-
     margin-bottom: 3px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 0px 0px 0px;
-
     border-width: 2px;
     border-color: #212738;
     border-style: solid;
-
     background-color: #FFFFFF;
-
     text-align: center;
   }
-
-  .page_header {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    font-size: $base-font-size * 2;
-    height: 99px;
-    width: 100%;
-
-    background-color: #F5F6F7;
-  }
-
-  .page_header span {
-    margin: 15px 0px 0px 50px;
-
-    font-size: 180%;
-    font-weight: bold;
-  }
-
-  .page_header img {
-    margin: 3px 0px 0px 40px;
-
-    border: 0px 0px 0px;
-  }
-
-  .table_of_contents {
+  
+ .table_of_contents {
     clear: left;
-    min-width: 200px;
+    z-index: 5000;
+    //min-width: 200px;
     margin: 3px 3px 3px 3px;
     background-color: #FFFFFF;
     text-align: left;
@@ -72,7 +41,7 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
 
   .table_of_contents_item {
     clear: left;
-    width: 100%;
+    //width: 100%;
     margin: 4px 0px 0px 0px;
     background-color: #FFFFFF;
     color: #000000;
@@ -256,8 +225,10 @@ ul, ol, dl, figure {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
-        }
+            fill: #CD214F; //#9F9386;
+	}
+
+;
     }
 }
 
@@ -275,20 +246,14 @@ ul, ol, dl, figure {
  */
 .site-header {
     // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.fix-header {
-  @extend .site-header;
-  position: fixed;
-  //width: 100%;
 }
 
 .site-nav {
     .menu-icon {
         display: none;
-//	width: 36px;
-//	height: 36px;
+	width: 36px;
+	height: 36px;
+	text-align: center;
     }
 
     .page-link {
@@ -299,25 +264,27 @@ ul, ol, dl, figure {
     }
 
     @include media-query($on-palm) {
-        position: fixed; //absolute;
-	opacity: 0.5;
-        top: 9px;
-        right: $spacing-unit / 2;
-        border-radius: 5px;
-        text-align: right;
         .menu-icon {
-            display: block;
-            float: right;
-         //   width: 26px;
-          //  height: 26px;
+	    position: fixed; 
+	    display: inline-block;
+	    top: 31px;
+	    left: 0;
+	    right: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+            width: 36px;
+            height: 36px;
             line-height: 0;
             padding-top: 10px;
             text-align: center;
             > svg {
                 width: 18px;
                 height: 15px;
+		padding: 5px;
+		border-radius: 5px;
+		border: solid 3px #9f9386;
                 path {
-                    fill: #11399c;
+                    fill: #CD214F;
                 }
             }
         }
@@ -349,7 +316,6 @@ ul, ol, dl, figure {
     font-size: 36px;
     font-weight: 300;
     letter-spacing: 2px;
-    float: left;
     &,
     &:visited,
     &:hover {
@@ -357,12 +323,6 @@ ul, ol, dl, figure {
     }
 }
   
-
-.fix-title {
-    position: fixed;
-    top: 0px;
-}
-
 
 /**
  * Site footer
@@ -474,3 +434,69 @@ ul, ol, dl, figure {
         }
     }
 }
+
+.placeholder {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    font-size: $base-font-size * 2;
+    background-color: #F5F6F7;
+    height: 99px;
+}
+
+.page_header {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    font-size: $base-font-size * 2;
+    border-top: solid 2px #000000;
+    
+	    position: fixed; 
+	    display: inline-block;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+
+    height: 99px;
+    background-color: #F5F6F7;
+    z-index: 4500;
+  }
+
+  .page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  .wrap2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .site_title { 
+    height: 60px;
+    margin: 15px 30px;
+    float: right;
+    display: block;
+  } 
+
+  .site_logo {
+    margin: 15px 0px 0px 60px;
+    height: 80px;
+    border: 0px 0px 0px;
+}
+
+  .site_logo_title {
+    margin-top: 15px;
+    height: 80px;
+    border: 0px 0px 0px;
+    display: inline-block;
+  }
+
+  .center_logo_title {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+ 

@@ -26,33 +26,15 @@ body, html {
   background-color: #FFFFFF;
   text-align: center; }
 
-.page_header {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
-  font-size: 32px;
-  height: 99px;
-  width: 100%;
-  background-color: #F5F6F7; }
-
-.page_header span {
-  margin: 15px 0px 0px 50px;
-  font-size: 180%;
-  font-weight: bold; }
-
-.page_header img {
-  margin: 3px 0px 0px 40px;
-  border: 0px 0px 0px; }
-
 .table_of_contents {
   clear: left;
-  min-width: 200px;
+  z-index: 5000;
   margin: 3px 3px 3px 3px;
   background-color: #FFFFFF;
   text-align: left; }
 
 .table_of_contents_item {
   clear: left;
-  width: 100%;
   margin: 4px 0px 0px 0px;
   background-color: #FFFFFF;
   color: #000000;
@@ -179,7 +161,7 @@ dl, dd, ol, ul, figure {
   height: 16px;
   vertical-align: middle; }
   .icon > svg path {
-    fill: #f5f6f7; }
+    fill: #CD214F; }
 
 /**
   * Randos
@@ -192,58 +174,53 @@ dl, dd, ol, ul, figure {
 /**
  * Site header
  */
-.site-header, .fix-header {
-  position: relative; }
-
-.fix-header {
-  position: fixed; }
-
 .site-nav .menu-icon, .nav-opaque .menu-icon {
-  display: none; }
+  display: none;
+  width: 36px;
+  height: 36px;
+  text-align: center; }
 .site-nav .page-link, .nav-opaque .page-link {
   margin-right: 20px; }
 @media screen and (max-width: 600px) {
-  .site-nav, .nav-opaque {
+  .site-nav .menu-icon, .nav-opaque .menu-icon {
     position: fixed;
-    opacity: 0.5;
-    top: 9px;
-    right: 15px;
-    border-radius: 5px;
-    text-align: right; }
-    .site-nav .menu-icon, .nav-opaque .menu-icon {
-      display: block;
-      float: right;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center; }
-      .site-nav .menu-icon > svg, .nav-opaque .menu-icon > svg {
-        width: 18px;
-        height: 15px; }
-        .site-nav .menu-icon > svg path, .nav-opaque .menu-icon > svg path {
-          fill: #11399c; }
-    .site-nav .trigger, .nav-opaque .trigger {
-      clear: both;
-      display: none; }
-    .site-nav:hover .trigger, .nav-opaque:hover .trigger {
-      display: block;
-      padding-bottom: 5px; }
-    .site-nav .page-link, .nav-opaque .page-link {
-      display: block;
-      margin-right: 0; } }
+    display: inline-block;
+    top: 31px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 36px;
+    height: 36px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center; }
+    .site-nav .menu-icon > svg, .nav-opaque .menu-icon > svg {
+      width: 18px;
+      height: 15px;
+      padding: 5px;
+      border-radius: 5px;
+      border: solid 3px #9f9386; }
+      .site-nav .menu-icon > svg path, .nav-opaque .menu-icon > svg path {
+        fill: #CD214F; }
+  .site-nav .trigger, .nav-opaque .trigger {
+    clear: both;
+    display: none; }
+  .site-nav:hover .trigger, .nav-opaque:hover .trigger {
+    display: block;
+    padding-bottom: 5px; }
+  .site-nav .page-link, .nav-opaque .page-link {
+    display: block;
+    margin-right: 0; } }
 
 .site-title {
   font-size: 32px;
   position: relative;
   font-size: 36px;
   font-weight: 300;
-  letter-spacing: 2px;
-  float: left; }
+  letter-spacing: 2px; }
   .site-title, .site-title:visited, .site-title:hover {
     text-decoration: none; }
-
-.fix-title {
-  position: fixed;
-  top: 0px; }
 
 /**
  * Site footer
@@ -313,6 +290,60 @@ dl, dd, ol, ul, figure {
 .post-content {
   padding: 10px;
   margin-bottom: 30px; }
+
+.placeholder {
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  font-size: 32px;
+  background-color: #F5F6F7;
+  height: 99px; }
+
+.page_header {
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  font-size: 32px;
+  border-top: solid 2px #000000;
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 99px;
+  background-color: #F5F6F7;
+  z-index: 4500; }
+
+.page_header span {
+  margin: 15px 0px 0px 50px;
+  font-size: 180%;
+  font-weight: bold; }
+
+.wrap2 {
+  text-align: center;
+  width: 100%; }
+
+.site_title {
+  height: 60px;
+  margin: 15px 30px;
+  float: right;
+  display: block; }
+
+.site_logo {
+  margin: 15px 0px 0px 60px;
+  height: 80px;
+  border: 0px 0px 0px; }
+
+.site_logo_title {
+  margin-top: 15px;
+  height: 80px;
+  border: 0px 0px 0px;
+  display: inline-block; }
+
+.center_logo_title {
+  display: block;
+  text-align: center;
+  width: 100%; }
 
 /**
  * Syntax highlighting styles
