@@ -12,10 +12,12 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
     //background-image: url("assets/images/blog_bg.jpg");
     background-color: #D8DBE2;
     font-family: Verdana, sans-serif;
+    @include media-query($on-palm) {
+      background-color: #ffffff;
+    }
   }
   .main_page {
     position: relative;
-    display: table;
     width: 100%;
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
@@ -28,6 +30,13 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
     border-style: solid;
     background-color: #FFFFFF;
     text-align: center;
+
+    //sadie
+    @include media-query($on-palm) {
+      border-width: none;
+      border-style: none;
+      border-color: none;
+    }
   }
   
  .table_of_contents {
@@ -35,7 +44,7 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
     z-index: 5000;
     //min-width: 200px;
     margin: 3px 3px 3px 3px;
-    background-color: #FFFFFF;
+   // background-color: #FFFFFF;
     text-align: left;
   }
 
@@ -53,22 +62,20 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
   }
 
   .content_section {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-
-    margin: 3px 3px 3px 3px;
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2) - 5);
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2) - 5);
+    padding: 3px 3px 3px 3px;
     display: inline-block;
     width: 98%;
     background-color: #FFFFFF;
-
-    text-align: left;
   }
 
   .content_section_text {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2) - 5);
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2) - 5);
     padding: 4px 8px 4px 8px;
     display: inline-block;
+    text-align: left;
     //width: 98%;
     color: #000000;
     font-size: 100%;
@@ -97,11 +104,10 @@ h1,h2,h3,h4,h5,p,a,div,header,li,ul,ol,span {
 
   .section_header {
     padding: 3px 6px 3px 6px;
-    //width: 100%;
+    width: 98%;
     background-color: #8E9CB2;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 112%;
     text-align: center;
   }
 
@@ -181,9 +187,11 @@ ul, ol, dl, figure {
  * Wrapper
  */
 .wrapper {
-    //width: 100%;
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -244,10 +252,6 @@ ul, ol, dl, figure {
 /**
  * Site header
  */
-.site-header {
-    // Positioning context for the mobile navigation icon
-}
-
 .site-nav {
     .menu-icon {
         display: none;
@@ -255,7 +259,6 @@ ul, ol, dl, figure {
 	height: 36px;
 	text-align: center;
     }
-
     .page-link {
         // Gaps between nav items, but not on the last one
         //&:not(:last-child) {
@@ -264,19 +267,18 @@ ul, ol, dl, figure {
     }
 
     @include media-query($on-palm) {
-        .menu-icon {
+    .toc_show {
+      display: none;
+    }
+    position: fixed;
+   .menu-icon {
 	    position: fixed; 
 	    display: inline-block;
 	    top: 31px;
-	    left: 0;
-	    right: 0;
-	    margin-left: auto;
-	    margin-right: auto;
             width: 36px;
             height: 36px;
             line-height: 0;
             padding-top: 10px;
-            text-align: center;
             > svg {
                 width: 18px;
                 height: 15px;
@@ -295,8 +297,9 @@ ul, ol, dl, figure {
         }
 
         &:hover .trigger {
-            display: block;
+            display: inline-block;
             padding-bottom: 5px;
+	    background-color: rgba(0,0,0,0); 
         }
 
         .page-link {
@@ -381,7 +384,7 @@ ul, ol, dl, figure {
 
 .post-meta {
     line-height: 24px;
-    font-size: 15px;
+    font-size: 10px;
     text-align: right;
     font-weight: 200;
     display: inline-block;
@@ -390,7 +393,6 @@ ul, ol, dl, figure {
 
 .post-link {
     display: inline-block;
-    font-size: 24px;
     &:hover {
       text-decoration: none;
     }
@@ -402,14 +404,6 @@ ul, ol, dl, figure {
 .post-heade {
     margin-bottom: $spacing-unit;
     padding-top: 25px;
-}
-
-.post-title {
-    letter-spacing: -1px;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
 }
 
 .post-content {
@@ -448,23 +442,56 @@ ul, ol, dl, figure {
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     font-size: $base-font-size * 2;
     border-top: solid 2px #000000;
-    
-	    position: fixed; 
-	    display: inline-block;
-	    top: 0;
-	    left: 0;
-	    right: 0;
-	    margin-left: auto;
-	    margin-right: auto;
-
+    position: fixed; 
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     height: 99px;
     background-color: #F5F6F7;
     z-index: 4500;
+    .site_logo_title {
+      display: none;
+    }
+    .site_logo {
+      display: inline-block;
+    }
+    .site_title {
+      display: inline-block;
+    }
+
+    @include media-query($on-laptop) {
+    .site_logo_title {
+      display: none;
+    }
+    .site_logo {
+      display: inline-block;
+    }
+    .site_title {
+      display: inline-block;
+    }
+    }
+    @include media-query($on-palm){
+      border-top: solid 2px #9f9386;
+      border-bottom: solid 2px #9f9386;
+      border-left: none;
+      border-right: none;
+      .site_logo_title {
+	display: inline-block;
+      }
+      .site_logo {
+	display: none;
+      }
+      .site_title {
+	display: none;
+      }
+    }
   }
 
   .page_header span {
     margin: 15px 0px 0px 50px;
-
     font-size: 180%;
     font-weight: bold;
   }
@@ -475,8 +502,8 @@ ul, ol, dl, figure {
   }
 
   .site_title { 
-    height: 60px;
-    margin: 15px 30px;
+    height: 30px;
+    margin: 35px 40px;
     float: right;
     display: block;
   } 

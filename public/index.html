@@ -18,29 +18,20 @@
 
 
   <body class="main_page">
-
     <header>
-      <div class="placeholder">nothing here</div>
+      <div class="placeholder floating_element wrap2">nothing here</div>
       <div class="page_header floating_element wrap2" id="trigger2">
-	<script type="text/javascript">
- 	 $(function () {
- 	     var wWidth = $(window).width();
- 	     if (wWidth > 600) {
- 	         $('<img alt="box logo" src="/assets/images/logos/xyzlogo18.png" class="floating_element site_logo"/>').appendTo('#trigger2');
- 	         $('<img alt="notebook" src="/assets/images/sadieparker_title4.png" class="floating_element site_title"/>').appendTo('#trigger2');
- 	     } else {
- 	         $('<div class="center_logo_title"><img alt="" src="/assets/images/logos/xyzlogotitle.png" class="site_logo_title"/></div>').appendTo('#trigger2');
- 	     }
- 	 });
-	</script>
+ 	  <img alt="box logo" src="/assets/images/logos/xyzlogo18.png" class="floating_element site_logo"/>
+          <img alt="notebook" src="/assets/images/sadieparker_title4.png" class="floating_element site_title"/>
+ 	  <div class="center_logo_title"><img alt="" src="/assets/images/logos/xyzlogotitle.png" class="site_logo_title"/></div>
      </div>
 	  <script type="text/javascript" src="/assets/scripts/jquery-3.1.0.min.js"></script>
 
     <nav>
      <div class="table_of_contents floating_element site-nav">
-	<!--<div class="section_header section_header_grey">
+	<div class="toc_show section_header section_header_grey">
 	  table of contents
-	</div>-->
+	</div>
 	  <div class="svg_center">
 	  <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -96,7 +87,7 @@
 </header>
 
 
-    <div class="content_section floating_element page-content">
+    <div class="content_section">
       <div class="wrapper content_section_text">
         <div class="home">
 
@@ -191,5 +182,4 @@
 
     </div>
   </body>
-
 </html>
