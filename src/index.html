@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="post-title section_header section_header_red">posts</h1>
+
+  <div class="post-list content_section floating_element">
+    {% for post in site.posts %}
+      <ul class="post-list-items">
+        <li>
+	  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-meta content_section_text">{{ post.date | date: "%b %-d %Y" }}</span>
+	</li>
+      </ul>
+    {% endfor %}
+  </div>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
